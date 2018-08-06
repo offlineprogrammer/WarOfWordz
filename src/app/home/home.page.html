@@ -8,6 +8,16 @@
 
 <ion-content padding>
   Welcome to the War of Wordz....
-  <ion-button shape="round" color="primary" fill="outline">Let The Gaame Begin</ion-button>
+  
+  <ion-input [(ngModel)]="myWord"  placeholder="Enter a word" ></ion-input>
+
+ 
+  <ion-button shape="round" color="primary" fill="outline" (click)="getWordDef()" >Let The Game Begin</ion-button>
+
+  <ion-textarea [(ngModel)]="myWordDef"></ion-textarea>
+
+
+
+
 
 </ion-content>
